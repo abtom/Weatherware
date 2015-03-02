@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WeatherWear</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
+    <link href='css/style.css' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,400|PT+Sans:400,700|Raleway:400,700,800,900' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <div id="site">
+
+
+      <!-- Forecast Page -->
+      <div id="page1">
+        <h1>Settings</h1>
+
+        <div class="main-content">
+          <form action="/change_setting" method="post">
+            <div id="accordion">
+              <h3>Temperature:</h3>
+                <div id="temp">                     
+                  <input type="radio" name="temp" value="fahrenheit"> Fahrenheit<br>
+                  <input type="radio" name="temp" value="celsius"> Celsius         
+                </div>
+              <h3>Notifications?</h3>
+                <div id="notif">                
+                  <input type="radio" name="notif" value="yes"> Yes<br>
+                  <input type="radio" name="notif" value="no"> No                 
+                </div>      
+            </div>
+          <button type="submit" class ="button" data-text-swap="Saved!">Save</button>
+          </form>
+        </div>
+
+        <div class="next"><a href="#"><img alt="Home" src='../images/home_icon.png' width="50" height="50"></a></div>
+      </div>
+
+
+      <!-- Home Page -->
+      <div id="page2">
+        <div class="prev"><a href="#"><img alt="Settings" src='../images/settings_icon.png' width="50" height="50"></a></div>
+
+        <h1>Weatherwear</h1>
+        <div class="main-content">
+          <p id="demo"></p>
+          <p id="weather">{{temp}}&deg; {{letter}}<br></p>
+          <p id="feels-like">Feels like {{exact}}&deg;</p>
+          <p id="recommend">
+            We recommend:<br>
+            <img src="images/tshirt.png">
+            <img src="images/hoodie.png">
+          </p>  
+        </div>
+
+        <div class="next"><a href="#"><img alt="Forecast" src='../images/forecast_icon.png' width="50" height="50"></a></div>
+      </div>
+
+
+      <!-- Forecast -->
+      <div id="page3">
+        <div class="prev"><a href="#"><img alt="Home" src='../images/home_icon.png' width="50" height="50"></a></div>
+
+        <h1>Forecast</h1>
+
+        <div class="main-content">
+          <h3>7-day Forecast</h3>
+          <table id="forecast">
+            <tr>
+              <th>Friday</th>
+              <th>Saturday</th>
+              <th>Sunday</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+            </tr>
+            <tr>
+              <td><a href="hourly.html"><img src="images/sun01.png"></a></td>
+              <td><a href="hourly.html"><img src="images/sun02.png"></a></td>
+              <td><a href="hourly.html"><img src="images/sun03.png"></a></td>
+              <td><a href="hourly.html"><img src="images/sun04.png"></a></td>
+              <td><a href="hourly.html"><img src="images/sun01.png"></a></td>
+              <td><a href="hourly.html"><img src="images/sun05.png"></a></td>
+              <td><a href="hourly.html"><img src="images/sun06.png"></a></td>
+            </tr>
+            <tr>
+              <td>69&deg;</td>
+              <td>72&deg;</td>
+              <td>71&deg;</td>
+              <td>67&deg;</td>
+              <td>69&deg;</td>
+              <td>74&deg;</td>
+              <td>78&deg;</td>
+            </tr>
+          </table>
+          <h3>What to wear..</h3>
+          <table id="forecast">
+            <tr>
+              <th>Friday</th>
+              <th>Saturday</th>
+              <th>Sunday</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+            </tr>
+            <tr>
+              <td><img src="images/dress01.png"></td>
+              <td><img src="images/dress02.png"></td>
+              <td><img src="images/dress03.png"></td>
+              <td><img src="images/dress04.png"></td>
+              <td><img src="images/dress07.png"></td>
+              <td><img src="images/dress05.png"></td>
+              <td><img src="images/dress06.png"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://malsup.github.com/jquery.cycle.all.js"></script> 
+    <script src="js/app.js"></script>
+    <script>
+      var d = new Date();
+      document.getElementById("demo").innerHTML = d.toDateString();
+    </script>
+
+
+  </body>
+</html>
