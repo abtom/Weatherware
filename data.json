@@ -1,0 +1,125 @@
+{
+	"hour": [
+		{
+			"time": "12 am",
+			"weather_URL": "sun01.png",
+			"hour_temp": "58"			
+		},
+		{
+			"time": "1 am",
+			"weather_URL": "sun02.png",
+			"hour_temp": "56"			
+		},
+		{
+			"time": "2 am",
+			"weather_URL": "sun01.png",
+			"hour_temp": "50"			
+		},
+		{
+			"time": "3 am",
+			"weather_URL": "sun02.png",
+			"hour_temp": "50"			
+		},
+		{
+			"time": "4 am",
+			"weather_URL": "sun03.png",
+			"hour_temp": "52"			
+		},
+		{
+			"time": "5 am",
+			"weather_URL": "sun01.png",
+			"hour_temp": "53"			
+		},
+		{
+			"time": "6 am",
+			"weather_URL": "sun01.png",
+			"hour_temp": "54"			
+		},
+		{
+			"time": "7 am",
+			"weather_URL": "sun01.png",
+			"hour_temp": "58"			
+		},
+		{
+			"time": "8 am",
+			"weather_URL": "sun03.png",
+			"hour_temp": "61"			
+		},
+		{
+			"time": "9 am",
+			"weather_URL": "sun04.png",
+			"hour_temp": "62"			
+		},
+		{
+			"time": "10 am",
+			"weather_URL": "sun01.png",
+			"hour_temp": "64"			
+		},
+		{
+			"time": "11 am",
+			"weather_URL": "sun04.png",
+			"hour_temp": "70"			
+		},
+		{
+			"time": "12 pm",
+			"weather_URL": "sun04.png",
+			"hour_temp": "72"			
+		},
+		{
+			"time": "1 pm",
+			"weather_URL": "sun02.png",
+			"hour_temp": "74"			
+		},
+		{
+			"time": "2 pm",
+			"weather_URL": "sun01.png",
+			"hour_temp": "76"			
+		},
+		{
+			"time": "3 pm",
+			"weather_URL": "sun02.png",
+			"hour_temp": "78"			
+		},
+		{
+			"time": "4 pm",
+			"weather_URL": "sun03.png",
+			"hour_temp": "76"			
+		},
+		{
+			"time": "5 pm",
+			"weather_URL": "sun01.png",
+			"hour_temp": "72"			
+		},
+		{
+			"time": "6 pm",
+			"weather_URL": "sun01.png",
+			"hour_temp": "68"			
+		},
+		{
+			"time": "7 pm",
+			"weather_URL": "sun01.png",
+			"hour_temp": "63"			
+		},
+		{
+			"time": "8 pm",
+			"weather_URL": "sun03.png",
+			"hour_temp": "62"			
+		},
+		{
+			"time": "9 pm",
+			"weather_URL": "sun04.png",
+			"hour_temp": "59"			
+		},
+		{
+			"time": "10 pm",
+			"weather_URL": "sun01.png",
+			"hour_temp": "55"			
+		},
+		{
+			"time": "11 pm",
+			"weather_URL": "sun04.png",
+			"hour_temp": "54"			
+		}
+
+	]
+}
