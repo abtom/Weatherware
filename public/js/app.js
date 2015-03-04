@@ -37,3 +37,6 @@ $('#make_url').click(function(e) {
     open(url, '_self');
 });
 
+$(".forecast").click(function(){
+        woopra.track("forecast_click");
+});
