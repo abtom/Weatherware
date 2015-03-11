@@ -191,3 +191,8 @@ input {
   letter-spacing: 4px;
 }
 
+#notification{
+  padding-right: 150px;
+  padding-top: 10px;
+  height: 50px;
+}

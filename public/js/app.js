@@ -33,10 +33,25 @@ $(document).ready(function(){
 
 $('#make_url').click(function(e) {
     e.preventDefault();
-    var url = "links/" + $('#linha').val() + ".html";
+    var url = $('#linha').val();
     open(url, '_self');
 });
 
 $(".forecast").click(function(){
         woopra.track("forecast_click");
+});
+
+$('.notification').click(function(){
+    alert("It's windy today, bring a jacket!");
+    $(this).fadeOut('slow');
+
+  });
+
+$('.no').click(function(){
+    $('img').removeClass('notification');
+
+});
+
+$('.yes').click(function(){
+    $('img').addClass('notification');
 });
